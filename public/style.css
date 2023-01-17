@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  color: grey;
+  font-size: .75rem;
+}
+
+nav {
+  height: 50px;
+  background: salmon;
+  color: white;
+  display: grid;
+  place-items: center;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.card--container {
+  display: flex;
+  padding: 15px;
+  gap: 15px;
+  width: 450px;
+  margin: auto;
+}
+
+.card--container img {
+  height: 150px;
+  width: 125px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.card--container :where(h2, p) {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.card--container :where(.dates, .description) {
+  font-size: .75rem;
+}
